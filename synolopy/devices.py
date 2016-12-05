@@ -171,6 +171,66 @@ def _nas_api(url, login, password):
                     'schedule_recording' : {
                         'api': 'SYNO.DTV.Schedule',
                         'version': 1
+                    },
+                    'video' : { # methods: "download"
+                        'api': 'SYNO.VideoStation.Video',
+                        'version': 1
+                    },
+                    'movie' : { # methods: "list", "search", "getinfo", "edit"
+                        'api': 'SYNO.VideoStation.Movie',
+                        'version': 1
+                    },
+                    'tvshow' : { # methods: "list", "search", "getinfo", "edit"
+                        'api': 'SYNO.VideoStation.TVShow',
+                        'version': 1
+                    },
+                    'tvshow_episode' : { # methods: "list", "search", "getinfo", "edit", "edit_adv"
+                        'api': 'SYNO.VideoStation.TVShowEpisode',
+                        'version': 1
+                    },
+                    'homevideo' : { # methods: "list", "search", "getinfo", "edit"
+                        'api': 'SYNO.VideoStation.HomeVideo',
+                        'version': 1
+                    },
+                    'tvrecord' : { # methods: "list", "search", "getinfo", "edit"
+                        'api': 'SYNO.VideoStation.TVRecording',
+                        'version': 1
+                    },
+                    'collection' : { # methods: "list", "getinfo", "video_list", "search", "video_getinfo", "create", "delete", "edit", "addvideo", "deletevideo"
+                        'api': 'SYNO.VideoStation.Collection',
+                        'version': 1
+                    },
+                    'metadata' : { # methods: "list"
+                        'api': 'SYNO.VideoStation.Metadata',
+                        'version': 1
+                    },
+                    'poster' : { # methods: "getimage", "setimage"
+                        'api': 'SYNO.VideoStation.Poster',
+                        'version': 1
+                    },
+                    'rating' : { # methods: "getinfo"
+                        'api': 'SYNO.VideoStation.Rating',
+                        'version': 1
+                    },
+                    'vtestreaming' : { # methods: "open", "stream", "close"
+                        'api': 'SYNO.VideoStation.Streaming',
+                        'version': 1
+                    },
+                    'folder' : { # methods: "list"
+                        'api': 'SYNO.VideoStation.Folder',
+                        'version': 1
+                    },
+                    'library' : { # methods: "list"
+                        'api': 'SYNO.VideoStation.Library',
+                        'version': 1
+                    },
+                    'watchstatus' : { # methods: "getinfo", "setinfo"
+                        'api': 'SYNO.VideoStation.WatchStatus',
+                        'version': 1
+                    },
+                    'info' : {
+                        'api': 'SYNO.VideoStation.Info',
+                        'version': 1
                     }
                 },
             },
